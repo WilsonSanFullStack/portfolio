@@ -16,7 +16,7 @@ const page = () => {
           <h1 className=" uppercase text-4xl font-bold">wilson sanchez</h1>
           <h3 className="text-lg font-bold">Programador Web Full Stack</h3>
           <p>Creando proyectos a tu medida, convirtiendo ideas en realidad</p>
-          <div className="flex justify-center">
+          <div className="flex justify-center mt-10">
             <Link href="https://github.com/WilsonSanFullStack" target="_blank">
               <VscGithub className="text-3xl m-2 cursor-pointer" />
             </Link>

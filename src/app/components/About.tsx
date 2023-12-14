@@ -16,7 +16,7 @@ const About = () => {
       </p>
       <p>
         Me considero de rapido aprendizaje ademas me gusta siempre estar
-        aprendiendo cosas nueva y claro perfeccionando los conocimientos antes
+        aprendiendo cosas nuevas y claro perfeccionando los conocimientos antes
         adquiridos.
       </p>
     </div>
