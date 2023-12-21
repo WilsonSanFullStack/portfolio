@@ -10,7 +10,7 @@ import Proyect from "./components/Proyect";
 
 const page = () => {
   return (
-    <div className=" general md:grid grid-cols-2 ">
+    <div className=" general md:grid grid-cols-2 md:min-h-screen md:max-h-screen">
       <div className="mx-4">
         <div className="text-center py-4">
           <h1 className=" uppercase text-4xl font-bold">wilson sanchez</h1>
@@ -44,7 +44,7 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className="md:min-h-screen md:max-h-screen md:overflow-y-scroll md:bg-scroll">
         <About />
         <Proyect />
       </div>
