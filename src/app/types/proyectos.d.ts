@@ -3,6 +3,7 @@ type Proyecto = {
   ubicacion: string;
   nombre: string;
   descripcion: string;
+  herramientas: string;
   fechaInicio: string;
   fechaFinal: string;
 };
