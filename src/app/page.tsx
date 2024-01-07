@@ -37,7 +37,7 @@ const page = () => {
             </Link>
 
             <Link
-              href="https://drive.google.com/file/d/12Est6XvLA6gd6FxC0YUvXrW-O9aQHDgz/view?usp=sharing"
+              href="https://drive.google.com/file/d/1knRc46jY3lJ49WL6guvQ7YxBfT-cQFjz/view?usp=drive_link"
               target="_blank"
             >
               <IoCloudDownload className="text-3xl m-2 cursor-pointer" />
