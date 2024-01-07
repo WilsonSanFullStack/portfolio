@@ -10,4 +10,13 @@ type Proyecto = {
 
 type Proyectos = Proyecto[];
 
-export { Proyecto, Proyectos };
+type education = {
+  escuela: string;
+  inicio: string;
+  final: string;
+  titulo: string;
+}
+
+type Educations = education [];
+
+export { Proyectos, Proyecto, education, Educations };

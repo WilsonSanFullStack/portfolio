@@ -1,5 +1,5 @@
 import React from "react";
-import { Proyecto, Proyectos } from "../types/proyectos";
+import { Proyectos } from "../types/proyectos";
 const Proyect = () => {
   const proyectos: Proyectos = [
     {

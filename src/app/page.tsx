@@ -7,7 +7,8 @@ import { CiLinkedin } from "react-icons/ci";
 import { IoCloudDownload } from "react-icons/io5";
 import Link from "next/link";
 import Proyect from "./components/Proyect";
-import Formulario from './components/Formulario'
+import Education from "./components/Education";
+
 const page = () => {
   return (
     <div className=" general md:grid grid-cols-2 md:min-h-screen md:max-h-screen">
@@ -47,6 +48,7 @@ const page = () => {
       <div className="md:min-h-screen md:max-h-screen md:overflow-y-scroll md:bg-scroll">
         <About />
         <Proyect />
+        <Education />
       </div>
     </div>
   );
