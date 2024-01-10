@@ -22,7 +22,7 @@ const page = () => {
               <VscGithub className="text-3xl m-2 cursor-pointer" />
             </Link>
             <Link
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=harveysanch@gmail.com"
+              href="https://mail.google.com/mail/u/4/#inbox?compose=GTvVlcSHxwPqnbChMGcVwjlXWmSFXqFrbNfxkjPmkJGcFfZlPTVVRtGSzRfvRxjsqgRMsPVrnhWJG"
               target="_blank"
             >
               <BiLogoGmail className="text-3xl m-2 cursor-pointer" />
