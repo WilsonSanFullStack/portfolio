@@ -1,4 +1,4 @@
-type Proyecto = {
+declare type Proyecto = {
   empresa: string;
   ubicacion: string;
   nombre: string;
@@ -8,15 +8,15 @@ type Proyecto = {
   fechaFinal: string;
 };
 
-type Proyectos = Proyecto[];
+declare type Proyectos = Proyecto[];
 
-type education = {
+declare type education = {
   escuela: string;
   inicio: string;
   final: string;
   titulo: string;
 }
 
-type Educations = education [];
+declare type Educations = education [];
 
-export { Proyectos, Proyecto, education, Educations };
+

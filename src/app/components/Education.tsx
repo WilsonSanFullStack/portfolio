@@ -1,5 +1,3 @@
-import React from "react";
-import { Educations } from "../types/proyectos";
 
 const Education = () => {
   const education: Educations = [
@@ -27,7 +25,7 @@ const Education = () => {
             <div key={index + 1} className="m-2 p-4 bg-slate-800">
               <section className="grid grid-cols-2 items-center border-b-2 border-slate-500 m-1">
                 <h1>Título: </h1>
-                <h2 className=" text-left font-bold text-blue-500 uppercase text-center">
+                <h2 className="font-bold text-blue-500 uppercase text-center">
                   {educ.titulo}
                 </h2>
               </section>

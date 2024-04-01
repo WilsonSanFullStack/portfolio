@@ -1,4 +1,3 @@
-import React from "react";
 import About from "./components/About";
 import { VscGithub } from "react-icons/vsc";
 import { BiLogoGmail } from "react-icons/bi";
@@ -22,7 +21,7 @@ const page = () => {
               <VscGithub className="text-3xl m-2 cursor-pointer" />
             </Link>
             <Link
-              href="https://mail.google.com/mail/u/4/#inbox?compose=GTvVlcSHxwPqnbChMGcVwjlXWmSFXqFrbNfxkjPmkJGcFfZlPTVVRtGSzRfvRxjsqgRMsPVrnhWJG"
+              href="mailto:harveysanch@gmail.com?subject=Deaseo Contratar Sus Servicios&body=Saludos Escribo con el fin de programar un contacto para contratacion de sus servicios como programador atentamente:  WhatsApp: ."
               target="_blank"
             >
               <BiLogoGmail className="text-3xl m-2 cursor-pointer" />

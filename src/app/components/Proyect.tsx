@@ -1,7 +1,15 @@
-import React from "react";
-import { Proyectos } from "../types/proyectos";
+
 const Proyect = () => {
   const proyectos: Proyectos = [
+    {
+      empresa: 'Practica',
+      ubicacion: 'Colombia',
+      nombre: 'Api-Rest NASA',
+      descripcion: 'Elaboracion de un frontend donde se muestran los diferentes objetos que estan cerca de la tierra o la orbitan y tambien se muestra una imagen diaria con su descripcion.',
+      herramientas: 'Next.js14, TypeScript, Html, Css, React, Tailwind',
+      fechaInicio: '22/03/2024',
+      fechaFinal: '01/04/2024'
+    },
     {
       empresa: "Porfolio",
       ubicacion: "Colombia",
