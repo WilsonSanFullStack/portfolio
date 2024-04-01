@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Space_Mono } from "next/font/google";
+import { Victor_Mono } from "next/font/google";
 import "./globals.css";
 
-const inter = Space_Mono({
+const inter = Victor_Mono({
   subsets: ["latin"],
   weight: ["400", "700"],
 });
