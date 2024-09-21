@@ -1,14 +1,50 @@
-
 const Proyect = () => {
   const proyectos: Proyectos = [
     {
-      empresa: 'Practica',
+      empresa: 'freelance',
       ubicacion: 'Colombia',
-      nombre: 'Api-Rest NASA',
-      descripcion: 'Elaboracion de un frontend donde se muestran los diferentes objetos que estan cerca de la tierra o la orbitan y tambien se muestra una imagen diaria con su descripcion.',
-      herramientas: 'Next.js14, TypeScript, Html, Css, React, Tailwind',
-      fechaInicio: '22/03/2024',
-      fechaFinal: '01/04/2024'
+      nombre: 'Agenda web',
+      descripcion: 'Pagina web con fin de guardar informacion de los clientes que frecuentas a cada usuario funcionalidades como registrarse, iniciar session, registro de clientes, registro de estafadores, eliminacion de clientes y estafadores, visualizacion de clientes, busqueda en tiempo real, filtro alfabetico, filtro por el origen del cliente, creacion de origenes de clientes ademas cada cliente se visualiza en una tarjeta a primera vista se ve informacion del cliente y al poner el mause sobre la tarjeta se muestran los comentarios del cliente',
+      herramientas: 'Firestore, React, TypeScript, Redux, Redux-Persist, Combine-Reducer Auth-Firestore',
+      fechaInicio: '05/08/2024',
+      fechaFinal: '20/09/2024 aun mejorando',
+      link: 'https://agendaweb-ryuksans-projects.vercel.app/',
+      funcional: 'funcional solucionando problemas con la persistencia de firestore algun consejo sobre ese tema al interno'
+    },
+    {
+      empresa: 'freelance',
+      ubicacion: 'colombia',
+      nombre: 'simbolos patrios',
+      descripcion: 'pagina web donde se muestran todos los simbolos patrios de colombia y una descripcion de cada uno de ellos',
+      herramientas: 'Next.js, TypeScript, Html, Css, Tailwind',
+      fechaInicio: '06/06/2024',
+      fechaFinal: 'Pausado 15/07/2024',
+      link: 'https://colombia-wilson-sanchez.vercel.app/',
+      funcional: 'esta funcional aun faltan cosas por arreglar 50% listo'
+    },
+    {
+      empresa: "freelance",
+      ubicacion: "Colombia",
+      nombre: "cubo rubik",
+      descripcion:
+        "Elaboracion de una pagina donde se muestra un cubo y cada cara con un color Rojo, Azul, Verde, Blanco, Amarillo, Naranja ademas de botones con los cuales se puede mover cada ficha del cubo que consta de 9 fichas por cara y un total de 54 piezas con estas el reto es armar el cubo",
+      herramientas: "Next.js, TypeScript, Html, Css, React, Tailwind",
+      fechaInicio: "10/05/2024",
+      fechaFinal: "05/06/2024",
+      link: "https://cubo-rubik.vercel.app/",
+      funcional: "funcional a la fecha",
+    },
+    {
+      empresa: "Practica",
+      ubicacion: "Colombia",
+      nombre: "Api-Rest NASA",
+      descripcion:
+        "Elaboracion de un frontend donde se muestran los diferentes objetos que estan cerca de la tierra o la orbitan y tambien se muestra una imagen diaria con su descripcion.",
+      herramientas: "Next.js14, TypeScript, Html, Css, React, Tailwind",
+      fechaInicio: "22/03/2024",
+      fechaFinal: "01/04/2024",
+      link: "https://api-nasa-rust.vercel.app/",
+      funcional: "funcional",
     },
     {
       empresa: "Porfolio",
@@ -19,6 +55,8 @@ const Proyect = () => {
       herramientas: "TypeScript, Html, Css, React, Tailwind",
       fechaInicio: "17/12/23",
       fechaFinal: "5/01/24",
+      link: "https://wilsonsanchez.vercel.app/",
+      funcional: "funcional",
     },
     {
       empresa: "Colaboración",
@@ -30,6 +68,7 @@ const Proyect = () => {
         "JavaScript, Html, Css, Boostrap, React, Vite, Json-Server, PostgreSQL, Sql, Insomnia",
       fechaInicio: "01/12/23",
       fechaFinal: "02/12/23",
+      funcional: "Sin Data",
     },
     {
       empresa: "Prueba",
@@ -41,6 +80,8 @@ const Proyect = () => {
         "JavaScript, Html, Css, Tailwind, Next.js, React.js, Sqlite, Prisma, Vercel, Git, GitHub",
       fechaInicio: "16/11/23",
       fechaFinal: "21/11/23",
+      link: "https://liga-de-tenis-ryuksan.vercel.app/",
+      funcional: "sin base de datos",
     },
     {
       empresa: "Colaboración",
@@ -52,6 +93,7 @@ const Proyect = () => {
         "JavaScript, Html, Css, React.js, Node.js, Redux, PostgreSQL, Insomnia, Sequelize, Express, bcrypt, Tailwind",
       fechaInicio: "25/10/23",
       fechaFinal: "26/10/23",
+      funcional: "sin data",
     },
     {
       empresa: "Colaboración",
@@ -63,6 +105,8 @@ const Proyect = () => {
         "JavaScript, ReactNative, Redux, FireBase, GoogleApis, Css, Html, Git, GitHub",
       fechaInicio: "01/11/23",
       fechaFinal: "15/11/23",
+      link: "https://play.google.com/store/apps/details?id=br.com.starapp.appbarbercli&pcampaignid=web_share",
+      funcional: "aplicacion disponible en la play store",
     },
 
     {
@@ -74,6 +118,8 @@ const Proyect = () => {
         "JavaScript, Html, Css, Tailwind, React.js, Insomnia, Node.js, Clerk.js, Redux, Tailwind, Sequelize, PostgreSQL, Express, Git, GitHub, Redux-Persist, Vite, React-DatePicker",
       fechaInicio: "01/10/2023",
       fechaFinal: "15/12/2023",
+      link: "https://www.zoomvirtuel.com/",
+      funcional: "totalmente funcional",
     },
     {
       empresa: "Porfolio",
@@ -84,6 +130,7 @@ const Proyect = () => {
       herramientas: "JavaScript, Html, Css, React, Tailwind",
       fechaInicio: "31/08/23",
       fechaFinal: "2/09/23",
+      funcional: "retirado debido al nuevo portfolio",
     },
     {
       empresa: "Nomand Locals",
@@ -94,6 +141,8 @@ const Proyect = () => {
         "JavaScript, Html, Css,  React.js, Redux, Node.js, Express, Sequelize, PostgreSQL, Git, GitHub, Trello, Slack, Meet, Render, Netlify, Clerk, Tailwind, Leaftlet, Redux-Persist, Socke.io, Star-rating, SweetAlert, Vite, GoogleApis, Nodemailer,  ",
       fechaInicio: "28/07/2023",
       fechaFinal: "31/08/20223",
+      funcional:
+        "sin noticias por parte de esta empresa por lo cual no se si este funcional",
     },
     {
       empresa: "HENRY",
@@ -104,6 +153,7 @@ const Proyect = () => {
         "JavaScript, Html, Css, React.js, Redux, Vite, Node.js, Express, Sequelize, PostgreSQL, Json-server, Api-Rest, jest",
       fechaInicio: "03/06/23",
       fechaFinal: "24/06/23",
+      funcional: "sin base de datos",
     },
   ];
   return (
@@ -115,10 +165,10 @@ const Proyect = () => {
         {proyectos.map((proyect, index) => {
           return (
             <section key={index + 1} className="m-2 p-4 bg-slate-800">
-              <h1 className="text-xl font-bold text-center">
+              <h1 className="text-xl font-bold text-center uppercase">
                 {proyect.nombre}
               </h1>
-              <div className=" grid grid-cols-2 text-center font-bold my-2">
+              <div className=" grid grid-cols-2 text-center font-bold my-2 uppercase">
                 <h1>Empresa: </h1> <h1>{proyect.empresa}</h1>
                 <h1>Ubicación: </h1> <h1>{proyect.ubicacion}</h1>
               </div>
@@ -137,7 +187,20 @@ const Proyect = () => {
                 </h3>
                 <h3>Proyecto Finalizado El: </h3>
                 <h3 className="font-bold text-red-500">{proyect.fechaFinal}</h3>
+                <h1>Funcionalidad:</h1>
+                <h1 className="font-bold text-orange-500 uppercase">
+                  {proyect.funcional}
+                </h1>
               </div>
+              {proyect.link && (
+                <div className="flex items-center justify-center">
+                  <button className="border-2 border-slate-500 m-1 p-1 rounded-lg px-2 text-blue-500 font-bold hover:text-green-500 active:text-white">
+                    <a href={proyect.link} target="_blank">
+                      Ver
+                    </a>
+                  </button>
+                </div>
+              )}
             </section>
           );
         })}

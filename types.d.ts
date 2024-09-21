@@ -6,6 +6,8 @@ declare type Proyecto = {
   herramientas: string;
   fechaInicio: string;
   fechaFinal: string;
+  link?: string;
+  funcional: string;
 };
 
 declare type Proyectos = Proyecto[];
