@@ -3,11 +3,22 @@ const Proyect = () => {
     {
       empresa: 'freelance',
       ubicacion: 'Colombia',
+      nombre: 'Cubo Rubik 3D',
+      descripcion: 'Se crea pagina web de un cubo rubik con explicacion de como armar el cubo rubik tanto para principiantes como para avanzados',
+      herramientas: 'TypeScript, Next.js, React, Tailwindcss, Css, Html, Vercel',
+      fechaInicio: '30/09/2024',
+      fechaFinal: '22/11/2024 aun en construcion 80%',
+      link: 'https://cubo-rubik-3-d.vercel.app/',
+      funcional: 'funciona el armado del cubo y se identifican las caras del cubo falta la teoria de como funcionan los algoritmos.  si desea ver el cubo navegar a  https://cubo-rubik-3-d.vercel.app/cubo'
+    },
+    {
+      empresa: 'freelance',
+      ubicacion: 'Colombia',
       nombre: 'Agenda web',
       descripcion: 'Pagina web con fin de guardar informacion de los clientes que frecuentas a cada usuario funcionalidades como registrarse, iniciar session, registro de clientes, registro de estafadores, eliminacion de clientes y estafadores, visualizacion de clientes, busqueda en tiempo real, filtro alfabetico, filtro por el origen del cliente, creacion de origenes de clientes ademas cada cliente se visualiza en una tarjeta a primera vista se ve informacion del cliente y al poner el mause sobre la tarjeta se muestran los comentarios del cliente',
       herramientas: 'Firestore, React, TypeScript, Redux, Redux-Persist, Combine-Reducer Auth-Firestore',
       fechaInicio: '05/08/2024',
-      fechaFinal: '20/09/2024 aun mejorando',
+      fechaFinal: '20/09/2024 pausado',
       link: 'https://agendaweb-ryuksans-projects.vercel.app/',
       funcional: 'funcional solucionando problemas con la persistencia de firestore algun consejo sobre ese tema al interno'
     },
