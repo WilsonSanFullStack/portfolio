@@ -43,7 +43,7 @@ const page = () => {
             </Link>
 
             <Link
-              href="https://drive.google.com/file/d/1WeD0YG3SOYujy-HKEhc7DTpC0hwnS0eX/view?usp=sharing"
+              href="https://drive.google.com/file/d/1j-IbQyfmIinv_zCj4MP8mGkpD3LgEea4/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
