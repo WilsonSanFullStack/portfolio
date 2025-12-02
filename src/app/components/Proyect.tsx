@@ -45,7 +45,7 @@ const Proyect = () => {
       Interfaz limpia y rápida
       Modularización de procesos y helpers reutilizables`,
       herramientas:
-        "Electron, Vite, React, Tailwindcss, Css, Html, JavaScript, Node.js, SQLite, Sequelize, Frame Motion, electron-Builder, eslint, Git, GitHub, dbduagran.io",
+        "Electron, Vite, React, Tailwindcss, Css, Html, JavaScript, Node.js, SQLite, Sequelize, Frame Motion, electron-Builder, eslint, Git, GitHub, dbdiagram.io",
       fechaInicio: "Feb-2024",
       fechaFinal: "Nov-2025",
       link: "https://github.com/WilsonSanFullStack/app-Agenda",
@@ -75,7 +75,7 @@ const Proyect = () => {
       herramientas:
         "Firestore, React, TypeScript, Redux, Redux-Persist, Combine-Reducer, Auth-Firestore",
       fechaInicio: "05/08/2024",
-      fechaFinal: "20/09/2024 pausado",
+      fechaFinal: "20/09/2024",
       link: "https://agendaweb-ryuksans-projects.vercel.app/",
       funcional:
         "funcional solucionando problemas con la persistencia de firestore algun consejo sobre ese tema al interno",
@@ -249,10 +249,10 @@ const Proyect = () => {
         Proyectos
       </h1>
       <h1 className="text-center uppercase font-bold">Tecnologias:</h1>
-      <section className="grid grid-cols-3 m-2 text-center font-bold uppercase bg-slate-800">
+      <section className="grid grid-cols-3 m-2 gp-4 text-;eft px-6 p-2 font-bold uppercase bg-slate-800">
         {tecnologias &&
-          tecnologias.map((x) => {
-            return <div key={x}>{x}</div>;
+          tecnologias.map((x, index) => {
+            return <div key={x}>{`${index+1}. `}{x}</div>;
           })}
       </section>
       <section>
@@ -262,7 +262,7 @@ const Proyect = () => {
               <h1 className="text-xl font-bold text-center uppercase">
                 {proyect.nombre}
               </h1>
-              <div className=" grid grid-cols-2 text-center font-bold my-2 uppercase">
+              <div className=" grid grid-cols-2 text-left font-bold my-2 uppercase w-96">
                 <h1>Empresa: </h1> <h1>{proyect.empresa}</h1>
                 <h1>Ubicación: </h1> <h1>{proyect.ubicacion}</h1>
               </div>
@@ -274,7 +274,7 @@ const Proyect = () => {
                 </h2>
               </section>*/}
 
-              <div className=" grid grid-cols-2 text-center font-bold my-2">
+              <div className=" grid grid-cols-2 text-left font-bold my-2 w-3/4">
                 <h3>Proyecto Iniciado El: </h3>
                 <h3 className="font-bold text-green-500">
                   {proyect.fechaInicio}
