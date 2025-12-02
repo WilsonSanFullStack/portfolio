@@ -1,6 +1,58 @@
 const Proyect = () => {
   const proyectos: Proyectos = [
     {
+      empresa: "autonomo",
+      ubicacion: "Colombia",
+      nombre: "GastosMotos",
+      descripcion: `Aplicación móvil desarrollada con React Native + Expo + Firebase para registrar, visualizar y controlar todos los gastos relacionados con motos (mantenimiento, tanqueadas, repuestos, lavado, parqueadero y más).
+  Está diseñada para ser rápida, simple y totalmente offline-first con sincronización automática cuando haya conexión.
+  
+  El proyecto inicia con un MVP claro y escalable:
+  • Registro de gastos para una o varias motos
+  • Historial completo por moto
+  • Resumen mensual de gastos
+  • Categorías personalizables
+  • Uso de Firebase Firestore + Auth
+  • App creada con Expo (plan gratuito)
+  • Código en TypeScript con arquitectura modular
+  
+  En versiones futuras crecerá a:
+  • Notificaciones automáticas de mantenimientos programados
+  • Múltiples perfiles por usuario
+  • Comparativas entre motos
+  • Exportación PDF/Excel
+  • Modo mecánico (para talleres)
+  `,
+      herramientas:
+        "React Native, Expo, TypeScript, Firebase Auth, Firestore, Expo Router, AsyncStorage, Tailwind (NativeWind), Css-in-JS, Git, GitHub",
+      fechaInicio: "Dic-2025",
+      fechaFinal: "En desarrollo",
+      link: "https://github.com/WilsonSanFullStack/GastosMotos",
+      funcional:
+        "MVP en desarrollo activo. El repositorio incluye instrucciones para clonar y correr el proyecto con Expo en cualquier dispositivo Android.",
+    },
+    {
+      empresa: "autonomo",
+      ubicacion: "Colombia",
+      nombre: "appAgenda",
+      descripcion: `es una aplicación de escritorio desarrollada con Electron + Vite para el manejo completo de ingresos, gastos y metas quincenales. La app automatiza cálculos, organiza información, presenta estadísticas claras y mejora notablemente el proceso de gestión financiero.
+      El proyecto pasó por dos versiones:
+      V1: funcional pero con código acoplado y difícil de mantener.
+      V2 (final): refactorización total → estructura modular, lógica optimizada y UX mejorada Características destacadas:
+      Flujo completo de cálculo de quincenas
+      Gestión de descuentos, bonos y metas
+      Persistencia de datos en local
+      Interfaz limpia y rápida
+      Modularización de procesos y helpers reutilizables`,
+      herramientas:
+        "Electron, Vite, React, Tailwindcss, Css, Html, JavaScript, Node.js, SQLite, Sequelize, Frame Motion, electron-Builder, eslint, Git, GitHub, dbduagran.io",
+      fechaInicio: "Feb-2024",
+      fechaFinal: "Nov-2025",
+      link: "https://github.com/WilsonSanFullStack/app-Agenda",
+      funcional:
+        "En el README del repositorio esta el .exe para ser descargado e instalado en cualquier sistema hasta el momento probado en windows",
+    },
+    {
       empresa: "freelance",
       ubicacion: "Colombia",
       nombre: "Cubo Rubik 3D",
@@ -193,7 +245,7 @@ const Proyect = () => {
       <h1 className="uppercase my-2 text-center font-bold text-2xl">
         Proyectos
       </h1>
-        <h1 className="text-center uppercase font-bold">Tecnologias:</h1>
+      <h1 className="text-center uppercase font-bold">Tecnologias:</h1>
       <section className="grid grid-cols-3 m-2 text-center font-bold uppercase bg-slate-800">
         {tecnologias &&
           tecnologias.map((x) => {

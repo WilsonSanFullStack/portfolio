@@ -1,37 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 👋 Hola, soy Wilson San
 
-## Getting Started
+Soy **Full Stack Developer** especializado en **React, React Native, TypeScript, Firebase, Node.js** y desarrollo de aplicaciones web y móviles. Me apasiona crear proyectos completos desde cero, con buen diseño, arquitectura limpia y enfoque en usabilidad.
 
-First, run the development server:
+## 🔧 Tecnologías & Habilidades  
+- **Frontend:** React, Next.js, React Native, Expo, TypeScript, Tailwind / NativeWind, CSS-in-JS  
+- **Backend:** Node.js, Express, Sequelize, PostgreSQL, Firebase (Auth, Firestore)  
+- **Otras herramientas:** Git, Vercel, Jest, Redux / Redux Toolkit, Electron  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Proyectos destacados  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+| Proyecto | Rol / Qué Resuelve |
+|---------|--------------------|
+| **appAgenda** | App desktop (Electron + JS/TS) → sistema completo de control de ingresos/gastos + reportes. Proyecto reescrito dos veces hasta lograr versión óptima. |
+| **MotoGastos** | App móvil (React Native + Firebase) → registro y análisis de gastos/mantenimiento de moto. CRUD + dashboard con totales, sin necesidad de Play Store. |
+| **Portfolio Web** | Este sitio (Next.js + Tailwind) — presenta mi trabajo, proyectos, habilidades y contacto. |
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📂 Estructura del portafolio  
+- Código limpio y modular  
+- Uso de TypeScript para tipado fuerte  
+- Buenas prácticas: separación de capas, validaciones, testing  
+- Uso de Firebase / bases de datos relacionales según conveniencia  
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 📫 Cómo contactarme  
+- GitHub: [WilsonSanFullStack](https://github.com/WilsonSanFullStack)  
+- LinkedIn: *([Wilson San](https://www.linkedin.com/in/wilsonsan/))*  
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# portfolio
+### ⚠️ Nota  
+Este portafolio sirve como vitrina profesional. Cada proyecto incluye su propio README, instrucciones de instalación y demostraciones cuando aplican.  
