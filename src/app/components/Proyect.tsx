@@ -24,7 +24,7 @@ const Proyect = () => {
   • Modo mecánico (para talleres)
   `,
       herramientas:
-        "React Native, Expo, TypeScript, Firebase Auth, Firestore, Expo Router, AsyncStorage, Tailwind (NativeWind), Css-in-JS, Git, GitHub",
+        "React Native, Expo, TypeScript, Firebase Auth, Firestore, Expo Router, AsyncStorage, Tailwindcss (NativeWind), Css-in-JS, Git, GitHub",
       fechaInicio: "Dic-2025",
       fechaFinal: "En desarrollo",
       link: "https://github.com/WilsonSanFullStack/GastosMotos",
@@ -86,7 +86,7 @@ const Proyect = () => {
       nombre: "simbolos patrios",
       descripcion:
         "pagina web donde se muestran todos los simbolos patrios de colombia y una descripcion de cada uno de ellos",
-      herramientas: "Next.js, TypeScript, Html, Css, Tailwind",
+      herramientas: "Next.js, TypeScript, Html, Css, Tailwindcss",
       fechaInicio: "06/06/2024",
       fechaFinal: "Pausado 15/07/2024",
       link: "https://colombia-wilson-sanchez.vercel.app/",
@@ -98,7 +98,7 @@ const Proyect = () => {
       nombre: "cubo rubik",
       descripcion:
         "Elaboracion de una pagina donde se muestra un cubo y cada cara con un color Rojo, Azul, Verde, Blanco, Amarillo, Naranja ademas de botones con los cuales se puede mover cada ficha del cubo que consta de 9 fichas por cara y un total de 54 piezas con estas el reto es armar el cubo",
-      herramientas: "Next.js, TypeScript, Html, Css, React, Tailwind",
+      herramientas: "Next.js, TypeScript, Html, Css, React, Tailwindcss",
       fechaInicio: "10/05/2024",
       fechaFinal: "05/06/2024",
       link: "https://cubo-rubik.vercel.app/",
@@ -110,7 +110,7 @@ const Proyect = () => {
       nombre: "Api-Rest NASA",
       descripcion:
         "Elaboracion de un frontend donde se muestran los diferentes objetos que estan cerca de la tierra o la orbitan y tambien se muestra una imagen diaria con su descripcion.",
-      herramientas: "Next.js, TypeScript, Html, Css, React, Tailwind",
+      herramientas: "Next.js, TypeScript, Html, Css, React, Tailwindcss",
       fechaInicio: "22/03/2024",
       fechaFinal: "01/04/2024",
       link: "https://api-nasa-rust.vercel.app/",
@@ -122,7 +122,7 @@ const Proyect = () => {
       nombre: "Wilson Sanchez",
       descripcion:
         "se crea el portafolio personal en donde muestro mis conocimientos y estudios",
-      herramientas: "TypeScript, Html, Css, React, Tailwind",
+      herramientas: "TypeScript, Html, Css, React, Tailwindcss",
       fechaInicio: "17/12/23",
       fechaFinal: "5/01/24",
       link: "https://wilsonsanchez.vercel.app/",
@@ -147,7 +147,7 @@ const Proyect = () => {
       descripcion:
         "Se crea una página web donde realizamos registro e inicio de sesión para usuarios y administradores creación de torneos con sus respectivas propiedades se agregan funcionalidad como la eliminación, edición, vista o agregar tanto torneos como usuarios también la posibilidad de promover administradores o eliminarlos, vista general de torneos y usuarios.",
       herramientas:
-        "JavaScript, Html, Css, Tailwind, Next.js, React, Sqlite, Prisma, Vercel, Git, GitHub",
+        "JavaScript, Html, Css, Tailwindcss, Next.js, React, Sqlite, Prisma, Vercel, Git, GitHub",
       fechaInicio: "16/11/23",
       fechaFinal: "21/11/23",
       link: "https://liga-de-tenis-ryuksan.vercel.app/",
@@ -160,7 +160,7 @@ const Proyect = () => {
       descripcion:
         "Se crea un inicio de sesión con registro donde se envía la información al server para posteriormente guardar no sin antes hacer un HASH al password para evitar la fuga de información.",
       herramientas:
-        "JavaScript, Html, Css, React, Node.js, Redux, PostgreSQL, Insomnia, Sequelize, Express, bcrypt, Tailwind",
+        "JavaScript, Html, Css, React, Node.js, Redux, PostgreSQL, Insomnia, Sequelize, Express, bcrypt, Tailwindcss",
       fechaInicio: "25/10/23",
       fechaFinal: "26/10/23",
       funcional: "sin data",
@@ -185,7 +185,7 @@ const Proyect = () => {
       nombre: "Zoom Virtuel",
       descripcion: `Creación de una página web, de contabilidad para una empresa donde se hace el manejo del pago de cada trabajador también ventas de productos al personal de la empresa. Con esta página se espera reducir los tiempos de la realización de las cuentas y manejar un correcto historial de la contabilidad así también los empleados pueden ver el producido quincenal cuando deseen sin la necesidad de contactar a cartera. Además reducir las consultas por WhatsApp sobre el producido quincenal. Se realiza una API con PostgreSQL donde se hace el manejo de modelos con express para el correcto almacenamiento de la información en la base de datos. El Front-End se maneja con React.js en donde se crean diferentes componentes para la recolección de información sensible como los créditos de diferentes páginas y los datos personales de cada empleado, vistas para la parte administrativa la cual también está restringida según la clasificación de usuarios vista para la visualización del producido quincenal de cada empleado el cual lo puede ver realizando el respectivo registro a la página.`,
       herramientas:
-        "JavaScript, Html, Css, Tailwind, React, Insomnia, Node.js, Clerk.js, Redux, Tailwind, Sequelize, PostgreSQL, Express, Git, GitHub, Redux-Persist, Vite, React-DatePicker",
+        "JavaScript, Html, Css, React, Insomnia, Node.js, Clerk.js, Redux, Tailwindcss, Sequelize, PostgreSQL, Express, Git, GitHub, Redux-Persist, Vite, React-DatePicker",
       fechaInicio: "01/10/2023",
       fechaFinal: "15/12/2023",
       link: "https://www.zoomvirtuel.com/",
@@ -197,7 +197,7 @@ const Proyect = () => {
       nombre: "Wilson Sanchez",
       descripcion:
         "se crea el portafolio personal en donde muestro mis conocimientos y estudios",
-      herramientas: "JavaScript, Html, Css, React, Tailwind",
+      herramientas: "JavaScript, Html, Css, React, Tailwindcss",
       fechaInicio: "31/08/23",
       fechaFinal: "2/09/23",
       funcional: "retirado debido al nuevo portfolio",
@@ -208,7 +208,7 @@ const Proyect = () => {
       nombre: "Nomand Locals",
       descripcion: `Creación de una página web, de encuentros entre dos o más personas las cuales se pueden encontrar en una actividad por los filtros creados por geolocalización y los diferentes tipos de actividades disponibles para crear. Además pueden chatear entre las personas que estén en una misma actividad tanto en el chat general como en un chat privado, también pueden realizar review de cada una de las actividades a las cuales están inscriptas o hacer el bloqueo de cada una de estas actividades si esta contiene elementos ofensivos o viola los derechos de autor igualmente para los usuarios. Igualmente puede aplicar filtros personalizados para encontrar actividades en otras zonas geológicas. Se crea una parte administrativa donde se hace el manejo de los usuarios de la página la eliminación, modificación, o creación de administradores o estándar, igualmente para las actividades creadas.`,
       herramientas:
-        "JavaScript, Html, Css, React, Redux, Node.js, Express, Sequelize, PostgreSQL, Git, GitHub, Trello, Slack, Meet, Render, Netlify, Clerk, Tailwind, Leaftlet, Redux-Persist, Socke.io, Star-rating, SweetAlert, Vite, GoogleApis, Nodemailer",
+        "JavaScript, Html, Css, React, Redux, Node.js, Express, Sequelize, PostgreSQL, Git, GitHub, Trello, Slack, Meet, Render, Netlify, Clerk, Tailwindcss, Leaftlet, Redux-Persist, Socke.io, Star-rating, SweetAlert, Vite, GoogleApis, Nodemailer",
       fechaInicio: "28/07/2023",
       fechaFinal: "31/08/20223",
       funcional:
@@ -227,8 +227,11 @@ const Proyect = () => {
     },
   ];
   const herramientas = proyectos.map((x) => {
-    return x.herramientas.split(", ");
-  });
+  return x.herramientas
+    .split(", ")
+    .map((h) => h.trim())
+    .sort((a, b) => a.localeCompare(b));
+});
   const tecnologias: string[] = [];
 
   for (let index of herramientas) {
