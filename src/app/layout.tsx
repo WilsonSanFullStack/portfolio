@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Victor_Mono } from "next/font/google";
+import { Roboto_Mono } from "next/font/google";
 import "./globals.css";
 
-const inter = Victor_Mono({
+const inter = Roboto_Mono({
   subsets: ["latin"],
   weight: ["400", "700"],
 });
