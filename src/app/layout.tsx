@@ -1,25 +1,32 @@
 import type { Metadata } from "next";
-import { Roboto_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "./Providers/ThemeProvider";
 
-const inter = Roboto_Mono({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Wilson Sanchez",
-  description: "Portfolio",
+  title: "Wilson Sanchez - Portfolio",
+  description: "Desarrollador Full Stack",
 };
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="es" suppressHydrationWarning>
+      <body className={`${inter.className} antialiased`}>
+        <ThemeProvider
+          attribute="class" 
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange={false}
+        >
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }

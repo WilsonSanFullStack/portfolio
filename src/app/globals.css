@@ -1,12 +1,112 @@
+/* globals.css CORREGIDO */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: #0f172a;
-  color: #cbd5e1;
-  font-family: 'Victor Mono', monospace;
+/* Animaciones personalizadas */
+@layer utilities {
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .animate-float-slow {
+    animation: float 8s ease-in-out infinite;
+  }
+  
+  .animate-float-slower {
+    animation: float 10s ease-in-out infinite;
+  }
+  
+  .animate-gradient {
+    background-size: 200% auto;
+    animation: gradient 3s ease infinite;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-out;
+  }
 }
-.general {
-  @apply container bg-slate-900 min-h-screen mx-auto
+
+/* Scroll personalizado */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #3b82f6, #8b5cf6);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #2563eb, #7c3aed);
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #1e40af, #5b21b6);
+}
+
+/* Smooth transitions */
+* {
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Selection style */
+::selection {
+  background-color: rgba(59, 130, 246, 0.3);
+  color: white;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Glass effect */
+.glass {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Gradient text - REMOVE or REPLACE the @apply line */
+/* Opción 1: Eliminar esta clase */
+/* Opción 2: Reemplazar con CSS nativo */
+.gradient-text {
+  background: linear-gradient(to right, #3b82f6, #8b5cf6, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Agrega estas transiciones smooth */
+.dark {
+  color-scheme: dark;
+}
+
+/* Mejora las transiciones */
+* {
+  transition: background-color 0.3s ease, 
+              border-color 0.3s ease, 
+              color 0.3s ease;
+}
+
+/* Asegura que las imágenes en dark mode no sean muy brillantes */
+.dark img {
+  filter: brightness(0.9);
+}
+
+/* Mejora los gradientes en dark mode */
+.dark .gradient-bg {
+  background-image: linear-gradient(to bottom right, 
+    rgba(17, 24, 39, 0.8), 
+    rgba(31, 41, 55, 0.8)
+  );
 }

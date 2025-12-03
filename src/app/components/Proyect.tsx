@@ -1,4 +1,17 @@
+'use client'
+import React, { useState } from "react";
+import {
+  FaExternalLinkAlt,
+  FaCalendar,
+  FaMapMarkerAlt,
+  FaCode,
+  FaFilter,
+} from "react-icons/fa";
+import { SiFirebase, SiReact, SiTypescript, SiNodedotjs } from "react-icons/si";
+
 const Proyect = () => {
+  const [selectedType, setSelectedType] = useState<string>("todos");
+
   const proyectos: Proyectos = [
     {
       empresa: "autonomo",
@@ -226,14 +239,16 @@ const Proyect = () => {
       funcional: "sin base de datos",
     },
   ];
-  const herramientas = proyectos.map((x) => {
-  return x.herramientas
-    .split(", ")
-    .map((h) => h.trim())
-    .sort((a, b) => a.localeCompare(b));
-});
-  const tecnologias: string[] = [];
 
+  // Extraer tecnologías únicas
+  const herramientas = proyectos.map((x) => {
+    return x.herramientas
+      .split(", ")
+      .map((h) => h.trim())
+      .sort((a, b) => a.localeCompare(b));
+  });
+
+  const tecnologias: string[] = [];
   for (let index of herramientas) {
     for (let y of index) {
       const ys = y.toLocaleLowerCase();
@@ -243,62 +258,236 @@ const Proyect = () => {
     }
   }
   tecnologias.sort();
-  return (
-    <div className="m-4">
-      <h1 className="uppercase my-2 text-center font-bold text-2xl">
-        Proyectos
-      </h1>
-      <h1 className="text-center uppercase font-bold">Tecnologias:</h1>
-      <section className="grid grid-cols-3 m-2 gp-4 text-;eft px-6 p-2 font-bold uppercase bg-slate-800">
-        {tecnologias &&
-          tecnologias.map((x, index) => {
-            return <div key={x}>{`${index+1}. `}{x}</div>;
-          })}
-      </section>
-      <section>
-        {proyectos.map((proyect, index) => {
-          return (
-            <section key={index + 1} className="m-2 p-4 bg-slate-800">
-              <h1 className="text-xl font-bold text-center uppercase">
-                {proyect.nombre}
-              </h1>
-              <div className=" grid grid-cols-2 text-left font-bold my-2 uppercase w-96">
-                <h1>Empresa: </h1> <h1>{proyect.empresa}</h1>
-                <h1>Ubicación: </h1> <h1>{proyect.ubicacion}</h1>
-              </div>
-              <p className="text-justify">{proyect.descripcion}</p>
-              {/* <section className="grid grid-cols-2 my-2">
-                <h1>Herramientas: </h1>
-                <h2 className="font-bold text-blue-500">
-                  {proyect.herramientas}
-                </h2>
-              </section>*/}
 
-              <div className=" grid grid-cols-2 text-left font-bold my-2 w-3/4">
-                <h3>Proyecto Iniciado El: </h3>
-                <h3 className="font-bold text-green-500">
-                  {proyect.fechaInicio}
-                </h3>
-                <h3>Proyecto Finalizado El: </h3>
-                <h3 className="font-bold text-red-500">{proyect.fechaFinal}</h3>
-                <h1>Funcionalidad:</h1>
-                <h1 className="font-bold text-orange-500 uppercase">
-                  {proyect.funcional}
-                </h1>
-              </div>
-              {proyect.link && (
-                <div className="flex items-center justify-center">
-                  <button className="border-2 border-slate-500 m-1 p-1 rounded-lg px-2 text-blue-500 font-bold hover:text-green-500 active:text-white">
-                    <a href={proyect.link} target="_blank">
-                      Ver
-                    </a>
-                  </button>
+  // Filtrar proyectos
+  const filteredProjects =
+    selectedType === "todos"
+      ? proyectos
+      : proyectos.filter((p) => p.empresa === selectedType);
+
+  // Tecnologías populares con iconos
+  const popularTechs = [
+    { name: "react", icon: <SiReact className="text-blue-500" /> },
+    { name: "typescript", icon: <SiTypescript className="text-blue-600" /> },
+    {
+      name: "next.js",
+      icon: <div className="text-black dark:text-white">N</div>,
+    },
+    { name: "node.js", icon: <SiNodedotjs className="text-green-600" /> },
+    { name: "firebase", icon: <SiFirebase className="text-yellow-500" /> },
+    { name: "tailwindcss", icon: <div className="text-cyan-500">T</div> },
+  ];
+
+  return (
+    <div className="space-y-8">
+      {/* Header */}
+      <div className="flex items-center gap-3 mb-4">
+        <div className="w-10 h-10 rounded-full bg-gradient-to-r from-orange-500 to-pink-500 flex items-center justify-center">
+          <FaCode className="text-white text-lg" />
+        </div>
+        <div>
+          <h1 className="text-2xl md:text-3xl font-bold text-gray-800 dark:text-white">
+            Proyectos
+          </h1>
+          <div className="w-20 h-1 bg-gradient-to-r from-orange-500 to-pink-500 rounded-full mt-1"></div>
+        </div>
+      </div>
+
+      {/* Tecnologías Populares */}
+      <div className="bg-gradient-to-r from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 rounded-2xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
+        <div className="flex items-center gap-3 mb-6">
+          <FaCode className="text-orange-500" />
+          <h2 className="text-xl font-bold text-gray-800 dark:text-white">
+            Tecnologías Dominadas
+          </h2>
+        </div>
+
+        {/* Popular Tech Icons */}
+        <div className="flex flex-wrap gap-4 mb-6">
+          {popularTechs.map((tech, index) => (
+            <div
+              key={index}
+              className="flex items-center gap-2 px-4 py-2 bg-white dark:bg-gray-800 rounded-xl shadow-md border border-gray-200 dark:border-gray-700"
+            >
+              {tech.icon}
+              <span className="font-medium text-gray-700 dark:text-gray-300">
+                {tech.name}
+              </span>
+            </div>
+          ))}
+        </div>
+
+        {/* Todas las tecnologías */}
+        <div className="relative">
+          <div className="absolute inset-0 bg-gradient-to-t from-white dark:from-gray-900 via-transparent to-transparent pointer-events-none rounded-xl"></div>
+          <div className="max-h-60 overflow-y-auto pr-2">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+              {tecnologias.map((tech, index) => (
+                <div
+                  key={tech}
+                  className="px-3 py-2 bg-gradient-to-r from-orange-50 to-pink-50 dark:from-orange-900/20 dark:to-pink-900/20 rounded-lg border border-orange-200 dark:border-orange-800 hover:shadow-md transition-shadow duration-300"
+                >
+                  <span className="text-gray-700 dark:text-gray-300 font-medium">
+                    {index + 1}. {tech}
+                  </span>
                 </div>
-              )}
-            </section>
-          );
-        })}
-      </section>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Filtros */}
+      <div className="flex flex-wrap gap-3">
+        <button
+          onClick={() => setSelectedType("todos")}
+          className={`px-4 py-2 rounded-lg font-medium transition-all duration-300 ${
+            selectedType === "todos"
+              ? "bg-gradient-to-r from-orange-500 to-pink-500 text-white shadow-lg"
+              : "bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700"
+          }`}
+        >
+          <FaFilter className="inline mr-2" />
+          Todos ({proyectos.length})
+        </button>
+        {[
+          "autonomo",
+          "freelance",
+          "colaboración",
+          "prueba",
+          "practica",
+          "porfolio",
+        ].map((type) => (
+          <button
+            key={type}
+            onClick={() => setSelectedType(type)}
+            className={`px-4 py-2 rounded-lg font-medium transition-all duration-300 ${
+              selectedType === type
+                ? "bg-gradient-to-r from-orange-500 to-pink-500 text-white shadow-lg"
+                : "bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700"
+            }`}
+          >
+            {type.charAt(0).toUpperCase() + type.slice(1)}
+          </button>
+        ))}
+      </div>
+
+      {/* Lista de Proyectos */}
+      <div className="space-y-6">
+        {filteredProjects.map((proyect, index) => (
+          <div
+            key={index}
+            className="group relative overflow-hidden bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-200 dark:border-gray-700 hover:-translate-y-1"
+          >
+            {/* Background Pattern */}
+            <div className="absolute inset-0 opacity-5">
+              <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-orange-500 to-pink-500 rounded-full -translate-y-32 translate-x-32"></div>
+            </div>
+
+            <div className="relative p-6">
+              {/* Header */}
+              <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+                <div>
+                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gradient-to-r from-orange-500/10 to-pink-500/10 border border-orange-200 dark:border-orange-800 mb-2">
+                    <span className="text-xs font-medium text-orange-600 dark:text-orange-400 uppercase">
+                      {proyect.empresa}
+                    </span>
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-800 dark:text-white group-hover:text-orange-600 dark:group-hover:text-orange-400 transition-colors duration-300">
+                    {proyect.nombre}
+                  </h3>
+                  <div className="flex items-center gap-2 text-gray-600 dark:text-gray-400 mt-1">
+                    <FaMapMarkerAlt />
+                    <span>{proyect.ubicacion}</span>
+                  </div>
+                </div>
+
+                {proyect.link && (
+                  <a
+                    href={proyect.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-orange-500 to-pink-500 text-white rounded-lg font-medium hover:shadow-lg hover:shadow-orange-500/30 transition-all duration-300 transform hover:-translate-y-0.5"
+                  >
+                    <FaExternalLinkAlt />
+                    <span>Ver Proyecto</span>
+                  </a>
+                )}
+              </div>
+
+              {/* Descripción */}
+              <div className="mb-6">
+                <p className="text-gray-700 dark:text-gray-300 whitespace-pre-line leading-relaxed">
+                  {proyect.descripcion}
+                </p>
+              </div>
+
+              {/* Timeline */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                <div className="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-800/50 rounded-lg">
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-r from-orange-400 to-pink-400 flex items-center justify-center">
+                    <FaCalendar className="text-white" />
+                  </div>
+                  <div>
+                    <div className="text-sm text-gray-600 dark:text-gray-400">
+                      Inicio
+                    </div>
+                    <div className="font-semibold text-green-600 dark:text-green-400">
+                      {proyect.fechaInicio}
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-800/50 rounded-lg">
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-r from-pink-400 to-purple-400 flex items-center justify-center">
+                    <FaCalendar className="text-white" />
+                  </div>
+                  <div>
+                    <div className="text-sm text-gray-600 dark:text-gray-400">
+                      Finalización
+                    </div>
+                    <div
+                      className={`font-semibold ${
+                        proyect.fechaFinal.includes("En desarrollo") ||
+                        proyect.fechaFinal.includes("desarrollo")
+                          ? "text-orange-600 dark:text-orange-400"
+                          : "text-red-600 dark:text-red-400"
+                      }`}
+                    >
+                      {proyect.fechaFinal}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Estado y Herramientas */}
+              <div className="flex flex-col md:flex-row gap-4">
+                <div className="flex-1">
+                  <div className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Estado del Proyecto
+                  </div>
+                  <div className="px-3 py-2 bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 rounded-lg border border-green-200 dark:border-green-800">
+                    <span className="text-green-700 dark:text-green-400 font-medium">
+                      {proyect.funcional}
+                    </span>
+                  </div>
+                </div>
+
+                <div className="flex-1">
+                  <div className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Tecnologías Utilizadas
+                  </div>
+                  <div className="px-3 py-2 bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
+                    <span className="text-blue-700 dark:text-blue-400">
+                      {proyect.herramientas}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
